@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="3107730379" file="Z:\Matt\IRIS Imager v1_1\IRIS_Imager.prj" location="Z:\Matt\IRIS Imager v1_1" name="IRIS_Imager" preferred-package-location="C:\Users\Matt\Desktop\IRIS Imager Local\IRIS_Imager\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="1336483105" file="Z:\Matt\IRIS Imager\IRIS Imager v1_2\IRIS_Imager.prj" location="Z:\Matt\IRIS Imager\IRIS Imager v1_2" name="IRIS_Imager" preferred-package-location="Z:\Matt\IRIS Imager\IRIS Imager v1_2\IRIS_Imager\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>IRIS_Imager</param.appname>
     <param.icon>${PROJECT_ROOT}\IRIS_Imager_resources\icon.ico</param.icon>
     <param.icons>
@@ -8,12 +8,12 @@
       <file>${PROJECT_ROOT}\IRIS_Imager_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\IRIS_Imager_resources\icon_16.png</file>
     </param.icons>
-    <param.version>1.1</param.version>
+    <param.version>1.2</param.version>
     <param.authnamewatermark>Matt Limmer</param.authnamewatermark>
     <param.email>limmer@udel.edu</param.email>
     <param.company>University of Delaware</param.company>
     <param.summary>Analyzes IRIS films for paint removal or sulfide deposition</param.summary>
-    <param.description>Calculates the removal of Fe and Mn paint from IRIS films. Program can also identify areas of Fe deposition on Mn films and sulfide deposition on Fe films.</param.description>
+    <param.description>Using scanned images of IRIS films pre- and post-deployment, the program calculates the removal of Fe and Mn paint from IRIS films. Program can also identify areas of Fe deposition on Mn films and sulfide deposition on Fe films.</param.description>
     <param.screenshot>${PROJECT_ROOT}\splash.png</param.screenshot>
     <param.guid />
     <param.installpath.string>\IRIS_Imager\</param.installpath.string>
@@ -46,11 +46,10 @@
 	 
  Input Arguments 
 	 -?  print help on how to use the application 
-	 input arguments</param.help.text>
+	 input arguments 
+ Description 
+ 	 Using scanned images of IRIS films pre- and post-deployment, the program calculates the removal of Fe and Mn paint from IRIS films. Program can also identify areas of Fe deposition on Mn films and sulfide deposition on Fe films.</param.help.text>
     <unset>
-      <param.authnamewatermark />
-      <param.email />
-      <param.company />
       <param.guid />
       <param.installpath.combo />
       <param.install.notes />
@@ -79,26 +78,26 @@
       <file>${PROJECT_ROOT}\IRIS_Imager_GUI.mlapp</file>
     </fileset.main>
     <fileset.resources>
-      <file>${PROJECT_ROOT}\IRIS_Film_Scan_0_20_app.m</file>
       <file>${PROJECT_ROOT}\PIECEWISELINE.m</file>
     </fileset.resources>
     <fileset.package>
       <file>${PROJECT_ROOT}\AdjustableParameters.xlsx</file>
       <file>${PROJECT_ROOT}\IRIS Imager User Guide.docx</file>
-      <file>${PROJECT_ROOT}\IRIS_Film_Scan_0_20.m</file>
+      <file>${PROJECT_ROOT}\IRIS_Film_Scan_0_22.m</file>
+      <file>${PROJECT_ROOT}\PIECEWISELINE.m</file>
     </fileset.package>
     <fileset.depfun>
-      <file>${PROJECT_ROOT}\AdjustableParameters.xlsx</file>
+      <file>${PROJECT_ROOT}\IRIS_Film_Scan_0_22_app.m</file>
       <file>${PROJECT_ROOT}\IRIS_Imager_logo2.png</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\IRIS_Imager\for_testing" name="readme.txt" optional="true">Z:\Matt\IRIS Imager v1_1\IRIS_Imager\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\IRIS_Imager\for_testing" name="splash.png" optional="false">Z:\Matt\IRIS Imager v1_1\IRIS_Imager\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\IRIS_Imager\for_testing" name="IRIS_Imager.exe" optional="false">Z:\Matt\IRIS Imager v1_1\IRIS_Imager\for_testing\IRIS_Imager.exe</file>
+      <file location="${PROJECT_ROOT}\IRIS_Imager\for_testing" name="IRIS_Imager.exe" optional="false">Z:\Matt\IRIS Imager\IRIS Imager v1_2\IRIS_Imager\for_testing\IRIS_Imager.exe</file>
+      <file location="${PROJECT_ROOT}\IRIS_Imager\for_testing" name="splash.png" optional="false">Z:\Matt\IRIS Imager\IRIS Imager v1_2\IRIS_Imager\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\IRIS_Imager\for_testing" name="readme.txt" optional="true">Z:\Matt\IRIS Imager\IRIS Imager v1_2\IRIS_Imager\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2019b</root>
+      <root>C:\Program Files\MATLAB\R2020b</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
         <toolbox name="embeddedcoder" />
